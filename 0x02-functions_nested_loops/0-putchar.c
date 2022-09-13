@@ -8,7 +8,8 @@
 int main(void)
 {
 	char *a = "_putchar";
-	for (*a)
+
+	for (*a; *a++)
 	{
 		_putchar(*a);
 	}
