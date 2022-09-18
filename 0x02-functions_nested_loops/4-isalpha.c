@@ -11,11 +11,14 @@ int _isalpha(int c)
 {
 	char i;
 
-	for (i = 'a'; i <= 'z'; i = 'A'; i <= 'Z'; i++)
+	for (i = 'a'; i <= 'z'; i++)
 	{
-		if (i == c)
+		for (i = 'A'; i <= 'Z'; i++)
 		{
-			return (1);
+			if (i == c)
+			{
+				return (1);
+			}
 		}
 	}
 	return (0);
