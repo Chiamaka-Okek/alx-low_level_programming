@@ -9,14 +9,18 @@
  */
 int _islower(int c)
 {
-	if (c == 'a' && c <= 'z')
+	char i;
+
+	for (i == 'a'; i <= 'z'; c++)
 	{
-		return (1);
-		c++;
-	}
-	else
-	{
-		return (0);
+		if i == c
+		{
+			return (1);
+		}
+		else
+		{
+			return (0);
+		}
 	}
 }
 
