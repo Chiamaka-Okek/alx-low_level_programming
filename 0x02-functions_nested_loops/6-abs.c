@@ -8,9 +8,13 @@
 int _abs(int a)
 {
 
-	if (a < '0' || a > '0')
+	if (a > '0')
 	{
-		return (1);
+		_putchar(a);
+	}
+	else if (a < '0')
+	{
+		_putchar(a * (-));
 	}
 	return (0);
 }
