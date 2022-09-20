@@ -16,4 +16,8 @@
 
 8-print_array.c file prints n elements of an array of integers followed by a new line
 
-9-strcpy.c file copies the string pointed to by src including the terminating terminating null byte (\0), to the buffer pointed to by dest.
+9-strcpy.c file copies the string pointed to by src including the terminating terminating null byte (\0), to the buffer pointed to by dest
+
+100-atoi.c file converts a string to an integer
+
+101-keygen.c file generates random valid passwords for the program 101-crackme
