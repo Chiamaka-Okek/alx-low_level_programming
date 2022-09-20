@@ -10,23 +10,35 @@
  */
 int _atoi(char *s)
 {
-	int sign = 1;
-	unsigned int a = 0;
+	int i;
+	int j = 0;
+	int k;
 
-	while (*s++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		if (*s == '-')
+		if (s[i] == '-')
 		{
-			sign *= -1;
+			p *= -1;
 		}
-		else if (*s >= '0' && *s <= '9')
+		if (s[i] > 47 && s[i] < 58)
 		{
-			a = a * 10 + (*s - '0');
-		}
-		else if (a > 0)
-		{
-			break;
+			if (j < 0)
+			{
+				j = (h * 10) - (s[i] - '0');
+			}
+			else
+			{
+				h = (s[i] - '0') * -1;
+			}
+			if (s[i + 1] < 48 || s[i + 1] > 57)
+			{
+				break;
+			}
 		}
 	}
-	return (a);
+	for (k < 0)
+	{
+		j *= -1;
+	}	
+	return (j);
 }
