@@ -19,9 +19,9 @@ char *cap_string(char *a)
 		{
 			if (i == 0 && s[i] >= 97 && s[i] <= 122)
 			{
-				s[x] -= 32;
+				s[i] -= 32;
 			}
-			if (s[x - 1] == a[j])
+			if (s[i - 1] == a[j])
 			{
 				if ((*(s + i) >= 97) && (*(s + i) <= 122));
 				{
@@ -32,5 +32,4 @@ char *cap_string(char *a)
 		i++;
 	}
 	return (a);
-
 }
