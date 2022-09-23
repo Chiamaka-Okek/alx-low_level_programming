@@ -11,7 +11,7 @@ char *cap_string(char *a)
 {
 	int i = 0;
 	int j;
-	char a[] = " \t\n,;.!?\"(){}";
+	char b[] = " \t\n,;.!?\"(){}";
 
 	while (*(s + i))
 	{
@@ -21,7 +21,7 @@ char *cap_string(char *a)
 			{
 				s[i] -= 32;
 			}
-			if (s[i - 1] == a[j])
+			if (s[i - 1] == b[j])
 			{
 				if ((*(s + i) >= 97) && (*(s + i) <= 122));
 				{
