@@ -23,7 +23,7 @@ int is_prime_number(int n)
 }
 
 /**
- * prime - checks if num is divisible by 2
+ * prime_num - checks if num is divisible by 2
  *
  * @n: integer to be checked
  * @i: result from the division
