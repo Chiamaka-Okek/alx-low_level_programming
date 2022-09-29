@@ -7,3 +7,7 @@
 3-factorial.c file returns  the factorial of a given number
 
 4-pow_recursion.c file returns the value of x raised to the power of y
+
+5-sqrt_recursion.c file returns the natural square root of a number
+
+6-is_prime_number.c file checks for prime numbers
