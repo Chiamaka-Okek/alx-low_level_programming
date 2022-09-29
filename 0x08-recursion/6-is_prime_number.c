@@ -19,7 +19,7 @@ int is_prime_number(int n)
 	{
 		return (1);
 	}
-	return (prime(n, i));
+	return (prime_num(n, i));
 }
 
 /**
@@ -30,7 +30,7 @@ int is_prime_number(int n)
  *
  * Return: 1 if prime number is found else return 0
  */
-int prime(int n, int i)
+int prime_num(int n, int i)
 {
 	if (i <= 1)
 	{
@@ -40,5 +40,5 @@ int prime(int n, int i)
 	{
 		return (0);
 	}
-	return (prime(n, (i - 1)));
+	return (prime_num(n, (i - 1)));
 }
