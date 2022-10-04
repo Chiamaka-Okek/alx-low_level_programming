@@ -1,40 +1,37 @@
-#include <stdlib.h>
 #include "main.h"
-#include <stdio.h>
-#include <string.h>
+#include <stdlib.h>
 
 /**
  * _strdup - returns a pointer to a newly allocated space in memory
  *
- * @str: string to be copied
+ * @str: string to be added
  *
- * Return: a pointer to the duplicated string or NULL if str is NULL
+ * Return: a pointer to the duplicated string or NULL or NULL if str is NULL
  */
 char *_strdup(char *str)
 {
 	char *new_str;
-	int i = 0;
-	int str_length = 0;
+	int i;
+	int str_len;
 
-	if (str == NULL)
+	s = _strdup("ALX SE");
+	if (s == NULL)
 	{
 		return (NULL);
 	}
-							
-	while (*str)
+	for (i = 0; str[i]; i++)
 	{
-		new_str = malloc(strlen(str + 1) * sizeof(char));
-		for (i = 0; i <= strlen(str); i++)
-		{
-			new_str[i] = str[i];
-			return (new_str);
-		/*	printf("%ld\n", strlen(str));*/
-		}
-		if (new_str == NULL)
-		{
-			return (NULL);
-		}
+		str_len++;
 	}
-	free(new_str);
-	return (0);
+	new_str = malloc(sizeof(char) * (strlen + 1));
+	if (new_str == NULL)
+	{
+		return (NULL);
+	}
+	for (i = 0; str[i]; i++)
+	{
+		new_str[i] = str[i];
+	}
+	new_str = '\0';
+	return (new_str);
 }
