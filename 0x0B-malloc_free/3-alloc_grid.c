@@ -26,7 +26,7 @@ int **alloc_grind(int width, int height)
 	}
 	for (i = 0; i < height; i++)
 	{
-		arr[i] = (int *) malloc(sizeof(int))
+		arr[i] = (int *) malloc(sizeof(int));
 		if (arr[i] == NULL)
 		{
 			return (NULL);
