@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * alloc_grind - returns a pointer to a 2 dimensional array of integers
+ * alloc_grid - returns a pointer to a 2 dimensional array of integers
  *
  * @width: width of the grid
  * @height: height of the grid
@@ -26,7 +26,7 @@ int **alloc_grid(int width, int height)
 	}
 	for (i = 0; i < height; i++)
 	{
-		arr[i] = (int *) malloc(sizeof(int));
+		arr[i] = (int *) malloc(sizeof(int * width));
 		if (arr[i] == NULL)
 		{
 			return (NULL);
