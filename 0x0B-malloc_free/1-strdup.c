@@ -14,7 +14,6 @@ char *_strdup(char *str)
 	int i;
 	int str_len;
 
-	s = _strdup("ALX SE");
 	if (s == NULL)
 	{
 		return (NULL);
@@ -23,7 +22,7 @@ char *_strdup(char *str)
 	{
 		str_len++;
 	}
-	new_str = malloc(sizeof(char) * (strlen + 1));
+	new_str = malloc(sizeof(char) * (str_len + 1));
 	if (new_str == NULL)
 	{
 		return (NULL);
