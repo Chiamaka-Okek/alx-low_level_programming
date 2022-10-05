@@ -9,7 +9,7 @@
  *
  * Return:pointer to newly allocated space for concatenated strings
  */
-char *str_concat(char *s1, char *s2);
+char *str_concat(char *s1, char *s2)
 {
 	char *str_concat;
 	int i;
