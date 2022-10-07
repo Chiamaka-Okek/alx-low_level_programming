@@ -36,19 +36,15 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		return (NULL);
 	}
-	for (i = 0; s1(i); i++)
+	l1 = 0;
+	for (i = 0; s1[i]; i++)
 	{
-		if (i < l1)
-		{
-			memory[i] = *s1, s1++;
-		}
-		else
-		{
-			memory[i] = *s2, s2++;
-		}
+		memory[l1] = s1[i];
 	}
-	memory[i] = '\0';
+	for (i = 0; s2[i] && i < n; i++)
+	{
+		memory[l1++] = s2[i];
+	}
+	memory[l1] = '\0';
 	return (memory);
 }
-
-
