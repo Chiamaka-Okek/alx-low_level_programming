@@ -32,7 +32,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		return (NULL);
 	}
-	l1 = 0;
 	for (i = 0; s1[i]; i++)
 	{
 		memory[l1++] = s1[i];
