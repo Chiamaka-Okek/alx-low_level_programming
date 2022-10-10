@@ -7,6 +7,7 @@
  * @name: pointer to string for dog name
  * @age: pointer to float for dog age
  * @owner: pointer to stirng for dog owner
+ * Description: data structure for dog
  */
 struct dog
 {
@@ -14,19 +15,6 @@ struct dog
 	float age;
 	char *owner;
 };
-
-/**
- * struct dog - typedef for struct
- *
- * @name:pointer to string for the dog name
- * @age:pointer to float for the dog age
- * @owner: pointer to string for dog owner
- */
-typedef struct dog
-{
-	char *name;
-	float age;
-	char *owner;
-} dog_t;
+typedef struct dog dog_t;
 
 #endif
