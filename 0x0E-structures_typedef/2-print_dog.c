@@ -11,7 +11,7 @@
  */
 void print_dog(struct dog *d)
 {
-	while (*d)
+	while (d)
 	{
 		if (d == NULL)
 		{
