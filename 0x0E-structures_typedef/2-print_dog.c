@@ -33,7 +33,7 @@ void print_dog(struct dog *d)
 		{
 			printf("Owner: %s\n", d->owner);
 		}
-		printf("Age: %f\n", d->age);
+		printf("Age: %0.6f\n", d->age);
 	}
 }
 
