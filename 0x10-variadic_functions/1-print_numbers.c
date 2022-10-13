@@ -21,7 +21,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		value = va_arg(args, unsigned int);
 		if (separator == NULL)
 		{
-			printf("%d", value);
+			return;
 		}
 		else
 		{
