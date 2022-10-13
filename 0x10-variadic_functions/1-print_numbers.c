@@ -16,15 +16,18 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	va_list args;
 
 	va_start(args, n);
-	if (separator == NULL)
-	{
-		return;
-	}
-	for (i = 0; i < n; i++)
+	for (i  = 0; i < n; i++)
 	{
 		value = va_arg(args, unsigned int);
 		printf("%d", value);
-		printf("%s", separator);
+		if (separator == NULL)
+		{
+			return;
+		}
+		else if (i < n - 1)
+		{
+			printf("%s", separator);
+		}
 	}
 	va_end(args);
 	printf("\n");
