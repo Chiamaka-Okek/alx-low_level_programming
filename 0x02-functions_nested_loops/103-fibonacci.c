@@ -22,7 +22,7 @@ int main(void)
 			count = count + a;
 		}
 	}
-	printf("%ld ", count);
+	printf("%ld", count);
 	printf("\n");
 	return (0);
 }
