@@ -18,4 +18,5 @@ int main(void)
 	}
 	printf("\n%d", sum);
 	printf("\n");
+	return (0);
 }
