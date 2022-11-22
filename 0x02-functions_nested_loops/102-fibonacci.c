@@ -14,7 +14,7 @@ int main(void)
 
 	for (i = 2; i < 50; i++)
 	{
-		printf("ld", a);
+		printf("%ld", a);
 		if (i < 49)
 			printf(", ");
 		c = a + b;
