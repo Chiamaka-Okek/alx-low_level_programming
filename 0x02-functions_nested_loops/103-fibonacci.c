@@ -8,7 +8,7 @@
 int main(void)
 {
 	long int a = 1;
-	long int a = 2;
+	long int b = 2;
 	long int c, count = 0;
 	int i;
 
@@ -23,6 +23,6 @@ int main(void)
 		}
 	}
 	printf("%ld ", count);
-	printf("\n);
+	printf("\n");
 	return (0);
 }
