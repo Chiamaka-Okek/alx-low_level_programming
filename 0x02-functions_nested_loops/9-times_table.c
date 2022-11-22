@@ -18,10 +18,9 @@ void times_table(void)
 			if (k < 10)
 			{
 				_putchar(k + '0');
-				if (j < 9 && k < 10)
+				if (j < 9)
 				{
 					_putchar(',');
-					_putchar(' ');
 					_putchar(' ');
 				}
 			}
