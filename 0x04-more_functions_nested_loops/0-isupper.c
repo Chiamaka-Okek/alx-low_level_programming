@@ -1,4 +1,4 @@
-#include "main'h"
+#include "main.h"
 #include <stdio.h>
 
 /**
@@ -15,12 +15,9 @@ int _isupper(int c)
 	for (a = 'A'; a <= 'Z'; a++)
 	{
 		if (c != a)
-		{
 			return (0);
-		}
 		else
-		{
 			return (1);
-		}
 	}
+	return (0);
 }
