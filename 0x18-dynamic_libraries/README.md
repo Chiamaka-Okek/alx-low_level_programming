@@ -1,8 +1,8 @@
-## Dynamic Libraries
+# Dynamic Libraries
 
 This project explores dynamic libraries. Dynamic libraries which is also known a shared library can generally be referred to as an upgrade to a static library. Dynamic libraries are created for the sole purpose of programs to have the capability of accessing them regardless of where they are stored in memory.
 
-# Steps to create a dynamic library includes
+## Steps to create a dynamic library includes
 - Creating your object files and ensuring they are not linkable and most importantly that they are positional independent by using the flag -FPIC
 
 	**gcc -c filename.c -fpic**
